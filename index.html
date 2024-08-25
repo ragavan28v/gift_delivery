@@ -30,3 +30,50 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Delivery</title>
+    <!-- Link to Google Font Dancing Script -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Surprise Gift Delivery</h1>
+            <p>Click the images below to reveal your surprise!</p>
+        </div>
+
+        <!-- Add the customized birthday wish -->
+        <div class="birthday-wish">
+            <p>Happy Birthday, [Name]! May your day be filled with love, joy, and wonderful surprises! 🎉</p>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-box">
+                <img src="icons8-gift-100.png" alt="Gift" class="gift-image" onclick="revealImage(this, 'image1.jpg')">
+                <img src="gift1.jpg" alt="Image 1" class="hidden-image">
+            </div>
+            <div class="image-box">
+                <img src="icons8-gift-100.png" alt="Gift" class="gift-image" onclick="revealImage(this, 'image2.jpg')">
+                <img src="gift4.jpg" alt="Image 2" class="hidden-image">
+            </div>
+            <div class="image-box">
+                <img src="icons8-gift-100.png" alt="Gift" class="gift-image" onclick="revealImage(this, 'image3.jpg')">
+                <img src="gift3.jpg"" alt="Image 3" class="hidden-image">
+            </div>
+        </div>
+
+        <button id="reveal-button" onclick="revealAllImages()">Reveal All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
